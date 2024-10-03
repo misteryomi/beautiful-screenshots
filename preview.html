@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Screenshot Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #preview {
+            max-width: 90%;
+            max-height: 70vh;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="preview" alt="Screenshot preview">
+    <div class="button-container">
+        <button id="download">Download</button>
+        <button id="retake">Retake Screenshot</button>
+    </div>
+    <script src="preview.js"></script>
+</body>
+
+</html>
